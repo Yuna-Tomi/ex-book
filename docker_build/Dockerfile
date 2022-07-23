@@ -1,6 +1,5 @@
 # escape=\
 
-# This is just for development, tailoring Docker environment similar to GAE instance
 FROM docker.io/elixir:otp-25
 
 
