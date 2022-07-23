@@ -14,11 +14,6 @@ RUN apt-get install -y build-essential curl vim \
     /usr/local/src/* \
     /tmp/*
 
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs > rustup-init.sh \
-    && chmod +x rustup-init.sh \
-    && ./rustup-init.sh -y \
-    && rm rustup-init.sh
-
 # .bashrc とか .vimrc とかは適当に用意
 # COPY bashrc-copy . 
 # COPY .vimrc .
