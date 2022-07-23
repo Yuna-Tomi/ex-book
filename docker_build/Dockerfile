@@ -2,7 +2,6 @@
 
 FROM docker.io/elixir:otp-25
 
-
 RUN apt-get update -y \
     && apt-get upgrade -y
 
@@ -27,5 +26,4 @@ RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs > rustup-init.sh \
 
 WORKDIR /ex-book
 
-# Force shell to use pipenv
 ENTRYPOINT ["/bin/bash"]
