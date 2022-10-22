@@ -11,7 +11,7 @@ defmodule Sequence do
       iex> Sequence.start_link(10)
       :ok, #PID<...>
   """
-  def start_link(initial_number), do: GenServer.start_link(@server, initial_number, @server)
+  def start_link(initial_number), do: GenServer.start_link(@server, initial_number, name: @server)
 
   @doc """
   1 カウントする。戻り値は現在の値。
