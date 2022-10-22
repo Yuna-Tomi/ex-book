@@ -25,7 +25,8 @@ defmodule Scheduler do
               Enum.sort(results, fn {n1, _}, {n2, _} -> n1 <= n2 end)
 
             error ->
-              raise RuntimeError, message: "Last process encountered an error (#{error})."
+              raise RuntimeError,
+                message: "Last process encountered an error (#{error})."
           end
         end
 
